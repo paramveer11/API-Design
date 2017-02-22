@@ -182,7 +182,7 @@ function csvConverterGTM(array){
     result += (k.AccountID + "," + k.ContainerID + "," + k.PublicID + "\r\n");
   });
 
-  window.open("data:text/csv;charset=uth-8," + escape(result));
+  window.open("data:text/csv;charset=utf-8," + escape(result));
 }
 
 window.onload = function(){
