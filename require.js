@@ -188,12 +188,9 @@ function csvConverterGTM(array){
 }
 
 window.onload = function(){
-  var el = document.getElementById('auth-button-ga');
-  el.addEventListener('click', authorizeGa);
-  var elt = document.getElementById("auth-button-gtm");
-  elt.addEventListener('click', authorizeGtm);
+  document.getElementById('auth-button-ga').addEventListener('click', authorizeGa);
+  document.getElementById("auth-button-gtm").addEventListener('click', authorizeGtm);  
 }
-
 
 });
 
