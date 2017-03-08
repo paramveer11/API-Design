@@ -1,10 +1,12 @@
-//Respective ClientID should be mentioned,Replace it with a new clientID obtained from console.developers.google.com
+$(function(){
+  //Respective ClientID should be mentioned,Replace it with a new clientID obtained from console.developers.google.com
 var CLIENT_ID = '806264380803-b3p93b9804hf2lt53n96lbp21a7got2h.apps.googleusercontent.com';
   var SCOPES_GA = ["https://www.googleapis.com/auth/analytics.readonly"];
   var SCOPES_GTM = ["https://www.googleapis.com/auth/tagmanager.readonly"];
-  var JSONGA = [];
-  var JSONGTM = [];
-  var count = 0;
+  var JSONGA = []; /* Array to populate the data from different accountID in Google Analytics this will be an 
+  array of objects passed from printProperties().. */
+  var JSONGTM = []; //Array to populate data from different accountID in Tag Manager
+  var count = 0; // Counter variable 
   var i = 0;
   var j = 0;
 
@@ -192,4 +194,6 @@ window.onload = function(){
   elt.addEventListener('click', authorizeGtm);
 }
 
+
+});
 
